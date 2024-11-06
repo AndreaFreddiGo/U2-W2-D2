@@ -15,7 +15,9 @@
     <!-- HEADER / NAVBAR -->
 
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary shadow-sm position-fixed top-0"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -37,62 +39,66 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link text-warning" aria-current="page" href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#saldi">Saldi</a>
+                <a class="nav-link text-warning" href="#saldi">Saldi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Welcome summer</a>
+                <a class="nav-link text-warning" href="#">Welcome summer</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Last minute</a>
+                <a class="nav-link text-warning" href="#">Last minute</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Recensioni</a>
+                <a class="nav-link text-warning" href="#">Recensioni</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2"
+                class="form-control me-2 fw-bold border-2"
                 type="search"
                 placeholder="Cerca posti onirici"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-warning" type="submit">
+              <button
+                class="btn btn-outline-warning fw-bold border-2"
+                type="submit"
+              >
                 Cerca
               </button>
             </form>
           </div>
         </div>
+        *
       </nav>
     </header>
 
     <!-- MAIN -->
 
     <main>
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-12 bg-body-tertiary mx-auto my-5 p-5 text-center shadow-sm rounded"
-          >
-            <div class="d-flex justify-content-center">
-              <h1>Vaporwavel</h1>
-              <h6 class="align-self-center my-0">
-                - Dream to travel back in th 80s
-              </h6>
-            </div>
-            <hr />
-            <p>Scopri le destinazioni più oniriche e vintage del momento!</p>
-            <button type="button" class="btn btn-warning">Prenota ora</button>
-          </div>
+      <div class="container mt-5">
+        <div class="bg-light p-5 rounded shadow-sm">
+          <h1 class="display-1 d-inline-block mb-3 align-middle text-warning">
+            Vaporwavel
+          </h1>
+          <p class="lead d-inline-block mb-0 align-middle">
+            - Dream to travel back in th 80s
+          </p>
+          <hr />
+          <p class="lead mb-0 align-middle fst-italic">
+            Scopri le destinazioni più oniriche e vintage del momento!
+          </p>
+          <button type="button" class="btn btn-warning mt-3">
+            Prenota ora
+          </button>
         </div>
-      </div>
-      <section class="m-5">
-        <div class="container">
-          <div id="saldi">
+        <section>
+          <div id="saldi" class="mt-5 mb-3">
             <h3 class="d-inline-block">Saldi</h3>
             <button
               class="d-inline-block border-0 bg-transparent text-warning float-end"
@@ -180,138 +186,138 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="m-5">
-        <div id="welcome">
-          <h3 class="d-inline-block">Welcome Summer</h3>
-          <button
-            class="d-inline-block border-0 bg-transparent text-warning float-end"
-            data-bs-toggle="collapse"
-            data-bs-target="#welcomeSection"
-          >
-            Nascondi sezione
-          </button>
-        </div>
-        <div class="container" id="welcomeSection">
-          <div class="row g-3">
-            <div class="col-6 col-md-6 col-lg-4 col-xl-2">
-              <div class="card border-0 shadow-lg">
-                <img
-                  src="./assets/images/sunset-sea-beach-miami-wallpaper-preview.jpg"
-                  class="card-img-top"
-                  alt="vice-city"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Vice City</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem sequi dolor quo impedit eos incidunt aut doloribus
-                    perferendis a dolore ab unde soluta illo, cumque id officiis
-                    earum, architecto voluptates!
-                  </p>
-                  <a href="#" class="btn btn-warning">Prenota!</a>
+        </section>
+        <section>
+          <div id="welcome" class="mt-5 mb-3">
+            <h3 class="d-inline-block">Welcome Summer</h3>
+            <button
+              class="d-inline-block border-0 bg-transparent text-warning float-end"
+              data-bs-toggle="collapse"
+              data-bs-target="#welcomeSection"
+            >
+              Nascondi sezione
+            </button>
+          </div>
+          <div class="container" id="welcomeSection">
+            <div class="row g-3">
+              <div class="col-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card border-0 shadow-lg">
+                  <img
+                    src="./assets/images/sunset-sea-beach-miami-wallpaper-preview.jpg"
+                    class="card-img-top"
+                    alt="vice-city"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Vice City</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem sequi dolor quo impedit eos incidunt aut doloribus
+                      perferendis a dolore ab unde soluta illo, cumque id
+                      officiis earum, architecto voluptates!
+                    </p>
+                    <a href="#" class="btn btn-warning">Prenota!</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4 col-xl-2">
-              <div class="card border-0 shadow-lg">
-                <img
-                  src="./assets/images/sunset-sea-beach-miami-wallpaper-preview.jpg"
-                  class="card-img-top"
-                  alt="vice-city"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Vice City</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem sequi dolor quo impedit eos incidunt aut doloribus
-                    perferendis a dolore ab unde soluta illo, cumque id officiis
-                    earum, architecto voluptates!
-                  </p>
-                  <a href="#" class="btn btn-warning">Prenota!</a>
+              <div class="col-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card border-0 shadow-lg">
+                  <img
+                    src="./assets/images/sunset-sea-beach-miami-wallpaper-preview.jpg"
+                    class="card-img-top"
+                    alt="vice-city"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Vice City</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem sequi dolor quo impedit eos incidunt aut doloribus
+                      perferendis a dolore ab unde soluta illo, cumque id
+                      officiis earum, architecto voluptates!
+                    </p>
+                    <a href="#" class="btn btn-warning">Prenota!</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4 col-xl-2">
-              <div class="card border-0 shadow-lg">
-                <img
-                  src="./assets/images/sunset-sea-beach-miami-wallpaper-preview.jpg"
-                  class="card-img-top"
-                  alt="vice-city"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Vice City</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem sequi dolor quo impedit eos incidunt aut doloribus
-                    perferendis a dolore ab unde soluta illo, cumque id officiis
-                    earum, architecto voluptates!
-                  </p>
-                  <a href="#" class="btn btn-warning">Prenota!</a>
+              <div class="col-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card border-0 shadow-lg">
+                  <img
+                    src="./assets/images/sunset-sea-beach-miami-wallpaper-preview.jpg"
+                    class="card-img-top"
+                    alt="vice-city"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Vice City</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem sequi dolor quo impedit eos incidunt aut doloribus
+                      perferendis a dolore ab unde soluta illo, cumque id
+                      officiis earum, architecto voluptates!
+                    </p>
+                    <a href="#" class="btn btn-warning">Prenota!</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4 col-xl-2">
-              <div class="card border-0 shadow-lg">
-                <img
-                  src="./assets/images/sunset-sea-beach-miami-wallpaper-preview.jpg"
-                  class="card-img-top"
-                  alt="vice-city"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Vice City</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem sequi dolor quo impedit eos incidunt aut doloribus
-                    perferendis a dolore ab unde soluta illo, cumque id officiis
-                    earum, architecto voluptates!
-                  </p>
-                  <a href="#" class="btn btn-warning">Prenota!</a>
+              <div class="col-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card border-0 shadow-lg">
+                  <img
+                    src="./assets/images/sunset-sea-beach-miami-wallpaper-preview.jpg"
+                    class="card-img-top"
+                    alt="vice-city"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Vice City</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem sequi dolor quo impedit eos incidunt aut doloribus
+                      perferendis a dolore ab unde soluta illo, cumque id
+                      officiis earum, architecto voluptates!
+                    </p>
+                    <a href="#" class="btn btn-warning">Prenota!</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4 col-xl-2">
-              <div class="card border-0 shadow-lg">
-                <img
-                  src="./assets/images/sunset-sea-beach-miami-wallpaper-preview.jpg"
-                  class="card-img-top"
-                  alt="vice-city"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Vice City</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem sequi dolor quo impedit eos incidunt aut doloribus
-                    perferendis a dolore ab unde soluta illo, cumque id officiis
-                    earum, architecto voluptates!
-                  </p>
-                  <a href="#" class="btn btn-warning">Prenota!</a>
+              <div class="col-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card border-0 shadow-lg">
+                  <img
+                    src="./assets/images/sunset-sea-beach-miami-wallpaper-preview.jpg"
+                    class="card-img-top"
+                    alt="vice-city"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Vice City</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem sequi dolor quo impedit eos incidunt aut doloribus
+                      perferendis a dolore ab unde soluta illo, cumque id
+                      officiis earum, architecto voluptates!
+                    </p>
+                    <a href="#" class="btn btn-warning">Prenota!</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4 col-xl-2">
-              <div class="card border-0 shadow-lg">
-                <img
-                  src="./assets/images/sunset-sea-beach-miami-wallpaper-preview.jpg"
-                  class="card-img-top"
-                  alt="vice-city"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Vice City</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem sequi dolor quo impedit eos incidunt aut doloribus
-                    perferendis a dolore ab unde soluta illo, cumque id officiis
-                    earum, architecto voluptates!
-                  </p>
-                  <a href="#" class="btn btn-warning">Prenota!</a>
+              <div class="col-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card border-0 shadow-lg">
+                  <img
+                    src="./assets/images/sunset-sea-beach-miami-wallpaper-preview.jpg"
+                    class="card-img-top"
+                    alt="vice-city"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Vice City</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem sequi dolor quo impedit eos incidunt aut doloribus
+                      perferendis a dolore ab unde soluta illo, cumque id
+                      officiis earum, architecto voluptates!
+                    </p>
+                    <a href="#" class="btn btn-warning">Prenota!</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer></footer>
 
